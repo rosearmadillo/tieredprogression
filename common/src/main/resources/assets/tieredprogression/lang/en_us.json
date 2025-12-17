@@ -1,0 +1,16 @@
+{
+  "item.tieredprogression.copper_nugget": "Copper Nugget",
+  "item.tieredprogression.copper_sword": "Copper Sword",
+	"item.tieredprogression.copper_shovel": "Copper Shovel",
+  "item.tieredprogression.copper_pickaxe": "Copper Pickaxe",
+  "item.tieredprogression.copper_axe": "Copper Axe",
+  "item.tieredprogression.copper_hoe": "Copper Hoe",
+
+  "item.tieredprogression.copper_helmet": "Copper Helmet",
+  "item.tieredprogression.copper_chestplate": "Copper Chestplate",
+  "item.tieredprogression.copper_leggings": "Copper Leggings",
+  "item.tieredprogression.copper_boots": "Copper Boots",
+
+  "block.tieredprogression.nether_furnace": "Nether Furnace",
+  "container.tieredprogression.nether_furnace": "Nether Furnace"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "tieredprogression:copper_leggings"
+  },
+  "result": "tieredprogression:copper_nugget",
+  "experience": 0.0,
+  "cookingtime": 100
+}

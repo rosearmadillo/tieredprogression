@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "tieredprogression:block/nether_furnace_top",
+    "north": "tieredprogression:block/nether_furnace_front_on",
+    "south": "tieredprogression:block/nether_furnace_side",
+    "east": "tieredprogression:block/nether_furnace_side",
+    "west": "tieredprogression:block/nether_furnace_side",
+    "up": "tieredprogression:block/nether_furnace_top",
+    "down": "tieredprogression:block/nether_furnace_top"
+  }
+}

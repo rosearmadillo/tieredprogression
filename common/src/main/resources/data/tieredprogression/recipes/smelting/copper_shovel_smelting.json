@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "tieredprogression:copper_shovel"
+  },
+  "result": "tieredprogression:copper_nugget",
+  "experience": 0.0,
+  "cookingtime": 200
+}

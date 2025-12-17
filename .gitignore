@@ -1,0 +1,42 @@
+# === Gradle ===
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+
+# === Eclipse ===
+.metadata/
+bin/
+tmp/
+*.log
+.project
+.classpath
+.settings/
+
+# === IDEA / JetBrains ===
+.idea/
+*.iml
+out/
+
+# === Fabric / Forge / Quilt caches ===
+/fabric/run/
+forge/run/
+quilt/run/
+
+# Other general Minecraft-related files
+*.jar
+*.zip
+*.lck
+*.lock
+*.cache
+*.dat
+.fabric-loom/
+
+# MCP / Parchemnt / Forge specific
+*.mcp/
+*.parchment/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
