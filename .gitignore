@@ -40,3 +40,10 @@ quilt/run/
 .DS_Store
 Thumbs.db
 
+# Launch scripts
+fabric/fabric_client.launch
+fabric/fabric_server.launch
+forge/forge_client.launch
+forge/forge_server.launch
+quilt/quilt_client.launch
+quilt/quilt_server.launch
