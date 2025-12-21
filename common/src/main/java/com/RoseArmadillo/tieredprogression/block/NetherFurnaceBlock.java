@@ -3,6 +3,7 @@ package com.RoseArmadillo.tieredprogression.block;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
@@ -24,7 +25,10 @@ import com.RoseArmadillo.tieredprogression.block.entity.ModBlockEntities;
 import com.RoseArmadillo.tieredprogression.block.entity.NetherFurnaceBlockEntity;
 import com.RoseArmadillo.tieredprogression.particle.ModParticles;
 
-public class NetherFurnaceBlock extends AbstractFurnaceBlock {
+import dev.architectury.registry.menu.ExtendedMenuProvider;
+import dev.architectury.registry.menu.MenuRegistry;
+
+public class NetherFurnaceBlock extends AbstractFurnaceBlock{
     public NetherFurnaceBlock(Properties properties) {
         super(properties.lightLevel(state -> state.getValue(LIT) ? 15 : 0));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(LIT, false));
@@ -71,8 +75,8 @@ public class NetherFurnaceBlock extends AbstractFurnaceBlock {
             return InteractionResult.SUCCESS;
         } else {
             BlockEntity blockentity = level.getBlockEntity(pos);
-            if (blockentity instanceof NetherFurnaceBlockEntity) {
-                player.openMenu((NetherFurnaceBlockEntity)blockentity);
+            if (blockentity instanceof ExtendedMenuProvider extendedProvider) {
+                MenuRegistry.openExtendedMenu((ServerPlayer) player, extendedProvider);
             }
             return InteractionResult.CONSUME;
         }
